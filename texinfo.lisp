@@ -190,7 +190,7 @@ arguments are escaped for Texinfo prior to rendering."))
 
 (defun @node (name &optional next previous up)
   "Render an @node line on *standard-output*."
-  (format nil "~&@node ~A~@[, ~A~]~@[, ~A~]~@[, ~A~]" name next previous up))
+  (format nil "~&@node ~A~@[, ~A~]~@[, ~A~]~@[, ~A~]~%" name next previous up))
 
 (define-line-command @top (title))
 
