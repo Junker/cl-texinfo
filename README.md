@@ -5,24 +5,14 @@ generating Texinfo documentation programmatically. It offers macros and
 functions that mirror Texinfo commands, making it easy to write
 documentation from within Lisp code.
 
-# Features
-
--   Programmatic generation of Texinfo markup
-
--   Automatic escaping of special characters
-
--   Support for all major Texinfo commands
-
--   Macros for defining custom commands
-
--   Simple API for generating complete documents
-
 # Getting Started
 
 ## Installation
 
 Load cl-texinfo in your Lisp image:
 
+    (ql-dist:install-dist "http://dist.ultralisp.org/"
+                              :prompt nil)
     (ql:quickload :texinfo)
 
 ## Basic Usage

@@ -1,0 +1,5 @@
+((lisp-mode . ((eval . (put 'itemize 'common-lisp-indent-function 1))
+               (eval . (put 'example 'common-lisp-indent-function 1))
+               (eval . (put 'example-escaped 'common-lisp-indent-function 1))
+               (eval . (put 'lisp-escaped 'common-lisp-indent-function 1))
+               (eval . (put 'table 'common-lisp-indent-function 1)))))
