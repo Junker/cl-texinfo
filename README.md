@@ -1,11 +1,11 @@
-# CL-TEXINFO {#CL_002dTEXINFO}
+# CL-TEXINFO
 
 cl-texinfo is a Common Lisp library that provides utilities for
 generating Texinfo documentation programmatically. It offers macros and
 functions that mirror Texinfo commands, making it easy to write
 documentation from within Lisp code.
 
-# Features {#Introduction}
+# Features
 
 -   Programmatic generation of Texinfo markup
 
@@ -17,7 +17,7 @@ documentation from within Lisp code.
 
 -   Simple API for generating complete documents
 
-# Getting Started {#Getting-Started}
+# Getting Started
 
 ## Installation
 
@@ -82,7 +82,7 @@ Block commands create environments that span multiple lines:
       (@code "line 1")
       (@code "line 2"))
 
-# Document Structure {#Document-Structure}
+# Document Structure
 
 ## Creating Nodes
 
@@ -126,7 +126,7 @@ Menus provide navigation within Info readers:
       (menu-entry "Chapter 1" "chap1" "Introduction")
       (menu-entry "Chapter 2" "chap2" "Advanced Topics"))
 
-# Text Formatting {#Text-Formatting}
+# Text Formatting
 
 ## Emphasis
 
@@ -154,7 +154,7 @@ Use block commands for longer passages:
       (@code "(defun hello ()")
       (@code "  (print \"Hello, World!\"))"))
 
-# Cross References {#Cross-References}
+# Cross References
 
 ## Within a Document
 
@@ -168,7 +168,7 @@ Use block commands for longer passages:
     (@uref "https://example.com" "Example Site")
     (@inforef "Node Name" "text" "manual-name")
 
-# Lists and Tables {#Lists-and-Tables}
+# Lists and Tables
 
 ## Itemize Lists
 
@@ -192,7 +192,7 @@ Use block commands for longer passages:
       (@itemx "cdr")
       "Returns the rest of a list.")
 
-# Definition Commands {#Definition-Commands}
+# Definition Commands
 
 Texinfo provides specialized commands for documenting code:
 
@@ -217,7 +217,7 @@ The library provides predefined definition commands:
 
 -   `@defvr`, `@deftypevr` - Generic definitions
 
-# Rendering Output {#Rendering-Output}
+# Rendering Output
 
 ## String Output
 
