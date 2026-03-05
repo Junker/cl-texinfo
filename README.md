@@ -1,9 +1,4 @@
----
-subtitle: A Common Lisp Library for Generating Texinfo
-title: cl-texinfo
----
-
-# Description {#Description}
+# CL-TEXINFO {#CL_002dTEXINFO}
 
 cl-texinfo is a Common Lisp library that provides utilities for
 generating Texinfo documentation programmatically. It offers macros and

@@ -38,8 +38,8 @@ Texinfo documentation.")
   (@node "Top" "Description")
   (@top "cl-texinfo")
 
-  (@node "Description" "Introduction")
-  (@chapter "Description")
+  (@node "CL-TEXINFO" "Introduction")
+  (@chapter "CL-TEXINFO")
 
   "cl-texinfo is a Common Lisp library that provides utilities for generating
 Texinfo documentation programmatically. It offers macros and functions that
