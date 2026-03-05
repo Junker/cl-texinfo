@@ -413,10 +413,9 @@ arguments are escaped for Texinfo prior to rendering."))
 ;; Lists and Tables
 ;; ==========================================================================
 (define-line-command @item (&optional title))
+(define-line-command @itemx (&optional title))
 (define-block-command @itemize (&optional mark-generating-character-or-command))
 (define-block-command @enumerate (&optional number-or-letter))
-(define-line-command @item ())
-(define-line-command @itemx ())
 (define-block-command @table (&optional formatting-command))
 (define-block-command @vtable (&optional formatting-command))
 (define-block-command @ftable (&optional formatting-command))
