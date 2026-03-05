@@ -16,6 +16,9 @@
                       `(strcat (escape ,str) nl))
                     body)))
 
+(defmacro @itemn (&rest args)
+  `(@item (strcat ,@args)))
+
 (defvar *temp-file* "/tmp/texinfo-readme.texi")
 
 (when (uiop:file-exists-p *temp-file*)
@@ -260,11 +263,11 @@ Each command returns a string containing the generated Texinfo markup." nl
   "The library provides predefined definition commands:" nl
 
   (@itemize ((@bullet))
-    (@item (strcat (@code "@defvar") ", " (@code "@defopt") " - Variable definitions"))
-    (@item (strcat (@code "@deftypevar") " - Typed variable definitions"))
-    (@item (strcat (@code "@deffn") ", " (@code "@deftypefn") " - Function definitions"))
-    (@item (strcat (@code "@defmacro") " - Macro definitions"))
-    (@item (strcat (@code "@defvr") ", " (@code "@deftypevr") " - Generic definitions")))
+    (@itemn (@code "@defvar") ", " (@code "@defopt") " - Variable definitions")
+    (@itemn (@code "@deftypevar") " - Typed variable definitions")
+    (@itemn (@code "@deffn") ", " (@code "@deftypefn") " - Function definitions")
+    (@itemn (@code "@defmacro") " - Macro definitions")
+    (@itemn (@code "@defvr") ", " (@code "@deftypevr") " - Generic definitions"))
 
   (@node "Rendering Output" "API Reference" "Definition Commands" "Top")
   (@chapter "Rendering Output")
