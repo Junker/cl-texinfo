@@ -82,7 +82,7 @@ ENVIRONMENT should be a string designator."
     `(define-command ,command ,args
        ,(format nil "Render an ~A line." command)
        ,(if (not args)
-            (strcat (command-string command) "~%")
+            (strcat (command-string command) nl)
             `(format nil ,(strcat (command-string command) " ~{~A~^ ~}~%")
                      (mapcar (compose ,(if escape
                                            `(compose #'escape #'escape-newline)
